@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+  .cars {
+    display: flex;
+    justify-content: center;
+  }
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      margin: 55px 50px 30px 50px;
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 2em;
+        margin: 25px 50px;
+    }
+      .article h1 {
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 700;
+      color: hsl(0, 0%, 95%);
+      margin-bottom: 20px;
+      }
+      .article p{
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+      color: hsla(0, 0%, 100%, 0.75)
+      }
+    .footer {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      margin: 10px 50px 50px 50px;
+      color:inherit;
+    }
+      .buttons {
+        border: none;
+        border-radius: 25px;
+        background-color: white;
+        width: 130px;
+        height: 45px;
+        background-color: hsl(0, 0%, 95%);
+        font-family: 'Lexend Deca', sans-serif;
+        color: inherit;
+        font-weight: 700;
+      }
+        .buttons:active {
+          border: 1px solid hsl(0, 0%, 95%);
+          background-color: inherit;
+          color: hsl(0, 0%, 95%);
+            }
+    .sedans {
+      text-align: center;
+      overflow: wrap;
+      background-color: hsl(31, 77%, 52%);
+      color: hsl(31, 77%, 52%);
+    }
+    .suvs {
+      text-align: center;
+      overflow: wrap;
+      background-color: hsl(184, 100%, 22%);
+      color: hsl(184, 100%, 22%);
+    }
+    .luxury {
+      text-align: center;
+      overflow: wrap;
+      background-color: hsl(179, 100%, 13%);
+      color: hsl(179, 100%, 13%);
+    }
+@media only screen and (max-width: 5000px) {
+  .cars {
+    flex-direction: row;
+    width: 100%;
+    padding: 150px 250px;
+  }
+    .article {
+      height: 300px;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 500px) {
+  .cars {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 25px;
+  }
+    .article {
+      height: auto;
+    }
+}
